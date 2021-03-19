@@ -13,7 +13,7 @@ public class ChordPlayer : MonoBehaviour
     // Clips by instrument & piano key.
     private Dictionary<string, Dictionary<int, AudioClip>> m_InstrumentClips;
     private List<AudioClip> m_DrumLoopClips;
-    // Excluding Bass.
+    // Excluding Bass, numbers are piano key ranges for sample instruments.
     private readonly string[] m_Instruments = new string[]
     {
         "StringEnsemble", "GuitarAcoustic", "GuitarDistorted", "GuitarDrive", // 20 - 44
@@ -84,6 +84,7 @@ public class ChordPlayer : MonoBehaviour
 
     private int GetRandomRootKey(string instrument)
     {
+        // Piano key range.
         int min = 25, max = 49;
 
         switch (instrument)
