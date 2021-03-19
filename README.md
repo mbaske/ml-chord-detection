@@ -11,7 +11,7 @@ Here is the learning progress by chord type:
 
 As you might expect, the agent has an easier time detecting the characteristics of augmented, diminished and suspended chords. Major and minor chord variants are a little harder to identify: is that particular frequency supposed to be an added 7th note, or just an overtone in the instrument's spectrum?
 
-The visualization at inference shows the unfiltered cumulative agent guesses as key colors, updated at 0.02 second intervals.
+The visualization at inference shows the cumulative agent guesses as key colors, updated at 0.02 second intervals.
 Generally, detection seems to work best for clean, unambiguous signals. The more complex the audio, the harder it gets for the agent to land on a particular chord. 
 
 [Video](https://youtu.be/FuOo7v1pAlY)
